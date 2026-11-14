@@ -117,8 +117,10 @@ html:not([data-theme="light"]):not([data-theme="auto"]) .am.ap .only-light { dis
 .am.ap .ap-media.dark { background: radial-gradient(70% 60% at 50% 50%, #1f2a27, #000); place-items: center; padding: 24px; }
 .am.ap .ap-media > .phone, .am.ap .ap-media > .realdev { width: min(270px, 62%); margin-bottom: -16%; }
 .am.ap .ap-media .pair { display: flex; align-items: flex-end; justify-content: center; width: 100%; }
-.am.ap .ap-media .pair > * { width: 46%; margin-bottom: -14%; }
-.am.ap .ap-media .pair > * + * { margin-left: -6%; margin-bottom: -24%; }
+.am.ap .ap-media .pair { gap: 5%; }
+.am.ap .ap-media .pair > * { width: 43%; margin-bottom: -14%; }
+/* Side by side, never overlapping; the Android frame is a touch taller, so it is a touch narrower to match the iPhone's height */
+.am.ap .ap-media .pair > .android-phone { width: 41.8%; }
 .am.ap .ap-media .pair.watches2 { align-items: center; gap: 8%; }
 .am.ap .ap-media .pair.watches2 > * { width: 36%; margin: 0; }
 .am.ap .ap-media .pair.watches2 .watch { width: 34%; }
@@ -254,9 +256,9 @@ html:not([data-theme="light"]):not([data-theme="auto"]) .am.ap .only-light { dis
 .am.ap .social-grid svg { width: 30px; height: 30px; color: #d9531e; }
 .am.ap .social-grid b { font-size: 1.1rem; }
 .am.ap .social-grid p { color: var(--t2); font-size: 0.97rem; }
-.am.ap .social-devs { display: flex; justify-content: center; align-items: flex-end; gap: 0; margin-top: 34px; }
-.am.ap .social-devs > * { width: min(240px, 44vw); }
-.am.ap .social-devs > * + * { margin-left: -24px; transform: translateY(24px); }
+.am.ap .social-devs { display: flex; justify-content: center; align-items: flex-end; gap: min(28px, 5vw); margin-top: 34px; }
+.am.ap .social-devs > * { width: min(230px, 42vw); }
+.am.ap .social-devs > .android-phone { width: min(223px, 40.8vw); }
 @media (max-width: 860px) { .am.ap .social-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .am.ap .social-grid { grid-template-columns: 1fr; } }
 
