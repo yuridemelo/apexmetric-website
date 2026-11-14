@@ -136,8 +136,6 @@ html:not([data-theme="light"]):not([data-theme="auto"]) .am.ap .only-light { dis
 .am.ap .realdev .realframe { display: block; width: 100%; height: auto; position: relative; z-index: 2; pointer-events: none; }
 .am.ap .realdev .realscr { position: absolute; z-index: 1; left: calc(var(--l) * 1%); top: calc(var(--t) * 1%); width: calc(var(--w) * 1%); height: calc(var(--h) * 1%);
   border-radius: calc(var(--r) * var(--w) / 100 * 1cqw); overflow: hidden; background: #12271f; container-type: inline-size; }
-.am.ap .realdev.android-phone .realframe { z-index: 0; }
-.am.ap .realdev.android-phone .realscr { z-index: 1; }
 .am.ap .realdev .realscr > img, .am.ap .realdev .realscr > div { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .am.ap .realdev .realscr .screen, .am.ap .realdev .realscr .wscreen, .am.ap .realdev .realscr .rscreen { border-radius: 0; }
 .am.ap .realdev.tilt-l, .am.ap .realdev.tilt-r { filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.25)); }
